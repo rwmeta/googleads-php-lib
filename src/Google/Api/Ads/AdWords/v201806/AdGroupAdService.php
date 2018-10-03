@@ -1799,10 +1799,22 @@ if (!class_exists("ExpandedTextAd", false)) {
     public $headlinePart2;
 
     /**
+   * @access public
+   * @var string
+   */
+    public $headlinePart3;
+
+    /**
      * @access public
      * @var string
      */
     public $description;
+
+    /**
+    * @access public
+    * @var string
+    */
+    public $description2;
 
     /**
      * @access public
@@ -1832,11 +1844,13 @@ if (!class_exists("ExpandedTextAd", false)) {
       return self::XSI_TYPE;
     }
 
-    public function __construct($headlinePart1 = null, $headlinePart2 = null, $description = null, $path1 = null, $path2 = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $urlData = null, $type = null, $devicePreference = null, $AdType = null) {
+    public function __construct($headlinePart1 = null, $headlinePart2 = null, $headlinePart3 = null, $description = null, $description2 = null, $path1 = null, $path2 = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $urlData = null, $type = null, $devicePreference = null, $AdType = null) {
       parent::__construct();
       $this->headlinePart1 = $headlinePart1;
       $this->headlinePart2 = $headlinePart2;
+      $this->headlinePart3 = $headlinePart3;
       $this->description = $description;
+      $this->description2 = $description2;
       $this->path1 = $path1;
       $this->path2 = $path2;
       $this->id = $id;
